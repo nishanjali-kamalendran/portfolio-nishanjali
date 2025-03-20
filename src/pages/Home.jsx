@@ -34,7 +34,7 @@ const Home = () => {
             github: "https://github.com/nishanjali-kamalendran",
             linkedin: "http://linkedin.com/in/nishanjali-kamalendran-b43502293"
         },
-        summary: "Motivated and enthusiastic Software Engineering undergraduate seeking an internship opportunity to apply problem-solving skills and technical expertise. Passionate about developing innovative solutions, collaborating with teams, and gaining hands-on experience to contribute to impactful software projects."
+        summary: "Software Engineering undergraduate with a passion for problem-solving and developing innovative software solutions. Eager to collaborate with teams and apply technical skills to contribute to meaningful projects"
     };
 
     // Projects from CV
@@ -214,10 +214,10 @@ const Home = () => {
 
         // Send email using EmailJS
         emailjs.send(
-            'service_id', // Replace with your actual service ID from EmailJS dashboard
-            'template_id', // Replace with your actual template ID from EmailJS dashboard
+            'service_id', // Replace with  actual service ID from EmailJS dashboard
+            'template_id', // Replace with  actual template ID from EmailJS dashboard
             templateParams,
-            'public_key' // Replace with your actual public key from EmailJS dashboard
+            'public_key' // Replace with  actual public key from EmailJS dashboard
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
