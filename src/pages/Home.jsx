@@ -4,8 +4,6 @@ import background from "../assets/background.jpeg";
 import "/Users/anjali/Documents/GitHub/portfolio-nishanjali/public/Nishanjali Kamalendran.pdf";
 import emailjs from 'emailjs-com';
 
-// No need to initialize EmailJS here - we'll use the public key directly in the send method
-
 const Home = () => {
     // Animation states
     const [loaded, setLoaded] = useState(false);
