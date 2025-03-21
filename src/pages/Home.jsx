@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../style/Home.css";
 import background from "../assets/background.jpeg";
+import "/Users/anjali/Documents/GitHub/portfolio-nishanjali/public/Nishanjali Kamalendran.pdf";
 import emailjs from 'emailjs-com';
 
 // No need to initialize EmailJS here - we'll use the public key directly in the send method
@@ -134,7 +135,7 @@ const Home = () => {
             institution: "Methodist College - Colombo 03",
             degree: "Physical Science",
             period: "2008 - 2022",
-            courses: []
+            courses: ["Combined Mathematics", "Physics", "Chemistry", "General English", "ICT","Business Studies", "English Literature" ]
         }
     ];
 
@@ -165,7 +166,7 @@ const Home = () => {
     // Club activities from CV
     const clubs = [
         {
-            organization: "IEEE computer society",
+            organization: "IEEE Computer Society",
             role: "CodeRally 5.0 - Organising committee (Delegates handling)"
         },
         {
@@ -198,45 +199,47 @@ const Home = () => {
     };
 
     // Handle form submission
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        setFormStatus({ submitted: true, success: false, message: 'Sending...' });
+    // Handle form submission
+const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setFormStatus({ submitted: true, success: false, message: 'Sending...' });
 
-        // Simplify email template parameters to match standard EmailJS variables
-        const templateParams = {
-            from_name: formData.name,
-            from_email: formData.email,
-            subject: formData.subject,
-            message: formData.message,
-            to_name: profile.name,
-            reply_to: formData.email,
-        };
-
-        // Send email using EmailJS
-        emailjs.send(
-            'service_id', // Replace with  actual service ID from EmailJS dashboard
-            'template_id', // Replace with  actual template ID from EmailJS dashboard
-            templateParams,
-            'public_key' // Replace with  actual public key from EmailJS dashboard
-        )
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                setFormStatus({
-                    submitted: true,
-                    success: true,
-                    message: 'Message sent successfully! I will get back to you soon.'
-                });
-                setFormData({ name: '', email: '', subject: '', message: '' });
-            })
-            .catch((err) => {
-                console.error('FAILED...', err);
-                setFormStatus({
-                    submitted: true,
-                    success: false,
-                    message: 'Failed to send message. Please try emailing me directly at ' + profile.contact.email
-                });
-            });
+    // Prepare the email content for EmailJS
+    const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: profile.name,
+        reply_to: formData.email,
     };
+
+    // Send email using EmailJS
+    emailjs.send(
+        'service_0xh0e63', 
+        'template_docqtx3', 
+        templateParams,
+        '5j81Sv4zwCQAtsjAG' 
+    )
+    .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setFormStatus({
+            submitted: true,
+            success: true,
+            message: 'Message sent successfully! I will get back to you soon.'
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+    })
+    .catch((err) => {
+        console.error('FAILED...', err);
+        setFormStatus({
+            submitted: true,
+            success: false,
+            message: 'Failed to send message. Please try again later.'
+        });
+    });
+};
+
 
     // Categories for filtering projects
     const categories = [...new Set(projects.map(project => project.category))];
@@ -515,11 +518,11 @@ const Home = () => {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <i className="fas fa-phone"></i>
-                                <p>{profile.contact.phone}</p>
+                                <a href={`tel:${profile.contact.phone}`}>{profile.contact.phone}</a>
                             </div>
                             <div className="contact-item">
                                 <i className="fas fa-envelope"></i>
-                                <p>{profile.contact.email}</p>
+                                <a href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a>
                             </div>
                             <div className="contact-item">
                                 <i className="fab fa-github"></i>
