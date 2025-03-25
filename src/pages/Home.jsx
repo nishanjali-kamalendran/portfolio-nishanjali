@@ -16,13 +16,14 @@ const Home = () => {
         subject: '',
         message: ''
     });
+
     const [formStatus, setFormStatus] = useState({
         submitted: false,
         success: false,
         message: ''
     });
 
-    // Profile data from CV
+    // Profile data from Resume
     const profile = {
         name: "Nishanjali Kamalendran",
         title: "Software Engineering Undergraduate",
