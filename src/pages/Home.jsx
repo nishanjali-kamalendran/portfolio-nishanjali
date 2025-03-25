@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../style/Home.css";
 import background from "../assets/background.jpeg";
-import "/Users/anjali/Documents/GitHub/portfolio-nishanjali/public/Nishanjali Kamalendran.pdf";
 import emailjs from 'emailjs-com';
 
 const Home = () => {
@@ -352,12 +351,13 @@ const handleFormSubmit = (e) => {
                     <div className="hero-buttons">
                         <a href="#contact" className="btn btn-primary">Contact Me</a>
                         <a
-                            href="/public/Nishanjali Kamalendran.pdf"
+                            href="/Nishanjali Kamalendran.pdf"
                             className="btn btn-secondary"
                             download="Nishanjali Kamalendran.pdf"
                         >
-                            Download CV
+                        Download CV
                         </a>
+
                     </div>
                 </div>
             </section>
