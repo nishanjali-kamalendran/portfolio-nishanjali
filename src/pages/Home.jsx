@@ -358,7 +358,6 @@ const handleFormSubmit = (e) => {
                         >
                         Download CV
                         </a>
-
                     </div>
                 </div>
             </section>
@@ -448,7 +447,7 @@ const handleFormSubmit = (e) => {
                 </div>
             </section>
 
-            {/* Skills Section */}
+            {/* Skiills Section */}
             <section className="skills-section" id="skills">
                 <div className="container">
                     <h2 className="section-title">Skills</h2>
