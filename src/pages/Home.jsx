@@ -131,9 +131,9 @@ const Home = () => {
         {
             id: 2,
             institution: "Methodist College - Colombo 03",
-            degree: "Physical Science",
+            degree: "Advancel Level - Physical", 
             period: "2008 - 2022",
-            courses: ["Combined Mathematics", "Physics", "Chemistry", "General English", "ICT","Business Studies", "English Literature" ]
+            courses: ["Combined Mathematics", "Physics", "Chemistry", "GIT" ]
         }
     ];
 
@@ -196,7 +196,6 @@ const Home = () => {
         });
     };
 
-    // Handle form submission
     // Handle form submission
 const handleFormSubmit = (e) => {
     e.preventDefault();
