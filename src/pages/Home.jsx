@@ -15,9 +15,6 @@ import ex1 from "../assets/code_1.jpg";
 import ex2 from "../assets/code_2.jpg";
 import ex3 from "../assets/code_3.jpg";
 import ex4 from "../assets/code_4.jpg";
-import club1 from "../assets/ieee_cs.jpeg";
-import club2 from "../assets/ieee_sb.png";
-import club3 from "../assets/slsac.png";
 import Nishanjali from "../assets/Nishanjali.jpeg";
 
 const Home = () => {
