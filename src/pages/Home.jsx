@@ -198,7 +198,7 @@ const Home = () => {
             alt: "HCL Tech - Secret Santa", 
             year: "2024",
             match: "HCL Technologies Lanka",
-            description: "We had an awesome Secret Santa event at HCL Tech, and I was part of the fun! 🎅🎁 It was a day filled with laughter, surprise gifts, and plenty of holiday cheer. We exchanged thoughtful presents, and it was a great way to bond with colleagues and bring some festive spirit to the office. So much fun and full of surprises! ",
+            description: "We had an awesome Secret Santa event at HCL Tech, and was part of the fun! 🎅🎁 It was a day filled with laughter, surprise gifts, and plenty of holiday cheer. We exchanged thoughtful presents, and it was a great way to bond with colleagues and bring some festive spirit to the office. So much fun and full of surprises! ",
             extraImages: []
         },
         { 
@@ -284,33 +284,6 @@ const Home = () => {
         "Web Design for Beginners - University of Moratuwa",
         "Programming Foundations: Software Testing/QA"
     ];
-
-
-    // Club activities from CV
-    const clubs = [
-        {
-            organization: "IEEE Computer Society",
-            role: "CodeRally 5.0 - Organising committee (Delegates handling)",
-            backgroundImage: club1
-        },
-        {
-            organization: "IEEE Student Branch of IIT",
-            roles: [
-                "Standing committee nominee",
-                "IX 24 - Organising committee (Industrial Outreach)",
-            ],
-            backgroundImage: club2
-        },
-        {
-            organization: "SriLanka Student Actvitiy Committee (SLSAC)",
-            roles: [
-                "Industrial Outreach Coordinator",
-                
-            ],
-            backgroundImage:club3
-        }
-    ];
-
     // Toggle mobile menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -681,37 +654,7 @@ const handleFormSubmit = (e) => {
 
 
 
-            {/* Clubs Section 
-            <section className="clubs-section">
-            <div className="container">
-                <h2 className="section-title">Clubs & Activities</h2>
-                <div className="clubs-container">
-                    {clubs.map((club, index) => (
-                        <div 
-                            className="club-item" 
-                            key={index}
-                            style={{
-                                backgroundImage: `url(${club.backgroundImage})`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                color: 'black'
-
-                            }}
-                        >
-                        <h3>{club.organization}</h3>
-                        {club.role && <p>{club.role}</p>}
-                        {club.roles && (
-                            <ul>
-                                {club.roles.map((role, roleIndex) => (
-                                    <li key={roleIndex}>{role}</li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
-                ))}
-                </div>
-            </div>
-            </section>*/}
+            
 
 
             {/* Contact Section */}
