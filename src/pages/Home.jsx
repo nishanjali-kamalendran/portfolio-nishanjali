@@ -681,7 +681,7 @@ const handleFormSubmit = (e) => {
 
 
 
-            {/* Clubs Section */}
+            {/* Clubs Section 
             <section className="clubs-section">
             <div className="container">
                 <h2 className="section-title">Clubs & Activities</h2>
@@ -711,7 +711,7 @@ const handleFormSubmit = (e) => {
                 ))}
                 </div>
             </div>
-            </section>
+            </section>*/}
 
 
             {/* Contact Section */}
