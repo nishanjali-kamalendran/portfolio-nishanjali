@@ -1978,3 +1978,7 @@ section:nth-child(even) {
 .related-images-grid img:hover {
     transform: scale(1.05);
 }
+
+.contact-section {
+    z-index: 1; /* Lower z-index to ensure it stays below the modal */
+}
