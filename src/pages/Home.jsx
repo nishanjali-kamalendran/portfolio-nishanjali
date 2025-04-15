@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "../style/base.css"; // Import base styling sheet
+import "../style/Base.css"; // Import base styling sheet
 
 // Image imports
 import background from "../assets/background.jpeg";
