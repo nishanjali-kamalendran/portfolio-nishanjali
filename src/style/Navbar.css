@@ -1,0 +1,109 @@
+/* navbar.css - Navigation styling */
+.netflix-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .netflix-header.scrolled {
+    background-color: var(--netflix-black);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .netflix-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .netflix-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--netflix-red);
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px var(--netflix-shadow);
+  }
+  
+  .netflix-header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .netflix-header nav ul li {
+    margin-left: 25px;
+  }
+  
+  .netflix-header nav ul li a {
+    color: var(--netflix-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .netflix-header nav ul li a:hover {
+    color: var(--netflix-red);
+  }
+  
+  /* Mobile Nav Toggle Button */
+  .mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--netflix-white);
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767.98px) {
+    .netflix-header {
+      padding: 15px 0;
+      background-color: var(--netflix-black);
+    }
+    
+    .netflix-header nav {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: var(--netflix-black);
+      padding: 20px 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+    }
+    
+    .netflix-header nav.mobile-active {
+      display: block;
+    }
+    
+    .netflix-header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .netflix-header nav ul li {
+      margin: 0 0 15px 0;
+    }
+    
+    .netflix-header nav ul li a {
+      font-size: 16px;
+    }
+    
+    .mobile-nav-toggle {
+      display: block;
+    }
+  }
+  
+  @media print {
+    .netflix-header {
+      display: none;
+    }
+  }

@@ -1,0 +1,115 @@
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    z-index: 1; /* Lower z-index to ensure it stays below the modal */
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item i {
+    font-size: 20px;
+    color: var(--netflix-red);
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .contact-item p, .contact-item a {
+    font-size: 16px;
+    color: var(--netflix-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: var(--netflix-red);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: var(--netflix-white);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--netflix-red);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.25);
+  }
+  
+  .form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  /* Form message styles */
+  .form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-message.success {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: #2ecc71;
+    border: 1px solid rgba(39, 174, 96, 0.3);
+    animation: successPulse 1s ease;
+  }
+  
+  .form-message.error {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.3);
+  }
+  
+  @keyframes successPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .form-group input, .form-group textarea {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+  }
