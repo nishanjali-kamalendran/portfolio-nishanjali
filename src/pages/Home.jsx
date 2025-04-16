@@ -288,13 +288,13 @@ const Home = () => {
 
     // Achievements from CV
     const achievements = [
-        "Represented the school at Srilanka Mathematics Competition 2019",
-        "Awarded with honours at the Srilanka Olympiad Mathematics Foundation 2017",
-        "Awarded for mathematics at Methodist college annual prize giving (2016,2017,2018)",
+        "Represented the school at Sri Lanka Mathematics Competition 2019",
+        "Awarded with honours at the Sri Lanka Olympiad Mathematics Foundation 2017",
+        "Awarded for Mathematics at Methodist College Annual prize giving (2016,2017,2018)",
         "Represented the school at ANCQ 2018 and awarded with high distinction",
         "Python for Beginners - University of Moratuwa",
         "Web Design for Beginners - University of Moratuwa",
-        "Programming Foundations: Software Testing/QA"
+        "Programming Foundations -  Software Testing/QA"
     ];
 
     // Modal states for Gallery

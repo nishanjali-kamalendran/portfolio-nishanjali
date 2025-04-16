@@ -29,7 +29,7 @@ const Achievements = ({ achievements }) => {
             >
               <div className="achievement-content">
                 <div className="achievement-icon">
-                  {achievement.icon || '🏆'}
+                  {achievement.icon || '</>'}
                 </div>
                 <div className="achievement-details">
                   {achievement.title && <h3 className="achievement-title">{achievement.title}</h3>}
