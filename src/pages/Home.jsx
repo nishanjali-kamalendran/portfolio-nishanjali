@@ -163,8 +163,8 @@ const Home = () => {
             alt: "CodeRally 5.0", 
             year: "2024",
             match: "IEEE Computer Society of IIT",
-            description: "I was part of the Delegates Handling Team for CodeRally 5.0, which included multiple workshops followed by a 24-hour hackathon. I helped manage event logistics and participant coordination, while also participating in the hackathon. It was an invaluable experience that sharpened my organizational and problem-solving skills.",
-            extraImages: [ex1,ex2,ex3,ex4]
+            description: "Contributed as a member of the Delegates Handling Team for CodeRally 5.0, a multifaceted event featuring a series of workshops and a 24-hour hackathon. I managed logistics and participant coordination, and also took part in the hackathon, enhancing my organizational and problem-solving skills in a high-pressure environment.",
+            extraImages: [ex1, ex2, ex3, ex4]
         },
         { 
             id: 2, 
@@ -172,7 +172,7 @@ const Home = () => {
             alt: "INCEPTION", 
             year: "2024",
             match: "IEEE",
-            description: "I was recognized for my contribution as a volunteer at the Installation Ceremony. I assisted with event coordination and logistics, ensuring everything ran smoothly and efficiently. This recognition highlights my dedication and teamwork skills.",
+            description: "Volunteered at the IEEE Installation Ceremony, assisting with coordination and logistics to ensure seamless execution. My contribution was recognized for its impact, showcasing my dedication, teamwork, and event management capabilities.",
             extraImages: []
         },
         { 
@@ -181,7 +181,7 @@ const Home = () => {
             alt: "IX 24", 
             year: "2024",
             match: "IEEE Student Branch of IIT",
-            description: "As an Industrial Outreach Volunteer for IX 24, a UI/UX event, I helped facilitate multiple workshops and supported the 24-hour event. My role involved coordinating with industry professionals and ensuring a seamless experience for attendees, contributing to the success of the event.",
+            description: "Served as an Industrial Outreach Volunteer for IX 24, a UI/UX-focused event. Facilitated workshops and supported operations during the 24-hour experience, collaborating with industry professionals to deliver a smooth and enriching program for attendees.",
             extraImages: []
         },
         { 
@@ -190,7 +190,7 @@ const Home = () => {
             alt: "Rootcode AI", 
             year: "2024",
             match: "Rootcode AI Community",
-            description: "I participated in the AI Community Meetup in Colombo, organized by Root Code, which saw over 180 AI enthusiasts in attendance. The event featured a keynote by Munsif on 'Unified Intelligence: The Art of Multi-Modal AI,'exploring the principles and impact of multi-modal AI. It was inspiring to see such enthusiasm and growth in the community, and I look forward to the next meetup!",
+            description: "Participated in the Rootcode AI Community Meetup in Colombo, attended by over 180 AI enthusiasts. The event featured a keynote on 'Unified Intelligence: The Art of Multi-Modal AI'—a deep dive into the evolving landscape of artificial intelligence. It was an inspiring experience that expanded my knowledge and network within the AI space.",
             extraImages: []
         },
         { 
@@ -199,7 +199,7 @@ const Home = () => {
             alt: "Industrial Visit", 
             year: "2024",
             match: "Sysco LABS Sri Lanka",
-            description: "I was part of the team that welcomed students from IIT for an industry visit to Sysco. The session included an overview of Sysco's culture, an introduction to the marketing team, and engaging activities like an icebreaker and a CV creation workshop. It was a great opportunity to connect with future tech leaders and share insights about the dynamic industry.",
+            description: "Contributed to organizing and hosting an industrial visit to Sysco LABS Sri Lanka for students from IIT. The session included a company introduction, an overview of Sysco’s marketing strategies, and engaging activities such as an icebreaker and a CV workshop. A great opportunity to interact with future tech professionals and share industry insights.",
             extraImages: []
         },
         { 
@@ -208,16 +208,16 @@ const Home = () => {
             alt: "Hult Prize IIT", 
             year: "2024",
             match: "Informatics Institute of Technology",
-            description: "I had the privilege of serving as the Sub-Committee Lead for Team Recruitment under the Startup Team for Sri Lanka's first-ever Hult Prize – Hult Prize IIT. With over 180 registered teams, I played a key role in engaging aspiring startup founders and managing team registrations. Working with an amazing team, including Nishvaraj Kamalananthan, Kavishani Yoganathan, Linushankaran Janarththanan, Saranujan Gunanesan, Niththilan Santhasoruban, THAHESHAN SURESH, and Nishanjali Kamalendran, was truly enriching. A special thanks to Thaviru Hettiarachchi and Saad Mazhar for their invaluable guidance. This experience deepened my passion for entrepreneurship, leadership, and teamwork.",
+            description: "Served as Sub-Committee Lead for Team Recruitment at Sri Lanka’s first-ever Hult Prize event. Oversaw the registration of 180+ startup teams, engaged with young entrepreneurs, and supported the execution of a high-energy, innovation-driven competition. This role sharpened my leadership, coordination, and strategic planning skills.",
             extraImages: []
         },
         { 
             id: 7, 
             src: img7, 
-            alt: "HCL Tech - Circket Carnival", 
+            alt: "HCL Tech - Cricket Carnival", 
             year: "2024",
             match: "HCL Technologies Lanka",
-            description: "I participated in the HCL Tech Cricket Carnival as part of a team with 2 girls and 9 guys. Our team made it to the semi-finals, showcasing great teamwork and sportsmanship. It was a fantastic experience, combining fun, competition, and collaboration.",
+            description: "Took part in the HCL Tech Cricket Carnival, representing a mixed-gender team that advanced to the semi-finals. The event was a great platform to showcase team spirit, communication, and collaboration in a fun and competitive setting.",
             extraImages: []
         },
         { 
@@ -226,7 +226,7 @@ const Home = () => {
             alt: "HCL Tech - Secret Santa", 
             year: "2024",
             match: "HCL Technologies Lanka",
-            description: "We had an awesome Secret Santa event at HCL Tech, and was part of the fun! 🎅🎁 It was a day filled with laughter, surprise gifts, and plenty of holiday cheer. We exchanged thoughtful presents, and it was a great way to bond with colleagues and bring some festive spirit to the office. So much fun and full of surprises! ",
+            description: "Joined in the festive celebrations during HCL Tech’s Secret Santa event. The day was filled with laughter, thoughtful gift exchanges, and holiday cheer—an amazing opportunity to connect with colleagues and strengthen team bonds in a lighthearted environment.",
             extraImages: []
         },
         { 
@@ -235,10 +235,11 @@ const Home = () => {
             alt: "HCL Tech - Farewell", 
             year: "2025",
             match: "HCL Technologies Lanka",
-            description: "I had an unforgettable farewell at HCL Tech, surrounded by wonderful colleagues and friends. It was a day filled with laughter, memories, and heartfelt goodbyes. I'm truly grateful for the experiences and connections made during my time there, and I'll cherish these moments as I move forward. A huge thank you to everyone for making it so special!",
+            description: "Had a heartfelt farewell at HCL Tech, surrounded by amazing colleagues and friends. It was a moment of reflection, gratitude, and celebration of the memories made. I’m thankful for the support, growth, and camaraderie experienced throughout my time there.",
             extraImages: []
         },
     ];
+    
 
     // Education from CV
     const education = [

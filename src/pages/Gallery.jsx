@@ -55,11 +55,11 @@ const Gallery = ({ galleryImages }) => {
     const aspectRatio = img.width / img.height;
     
     if (aspectRatio < 1) {
-      return 'portrait modal-size-md';
+      return 'portrait modal-size-sm'; // Smaller modal for portrait images
     } else {
-      if (img.width > 1200) return 'landscape modal-size-xl';
-      if (img.width > 800) return 'landscape modal-size-lg';
-      return 'landscape modal-size-md';
+      if (img.width > 1200) return 'landscape modal-size-lg'; // Larger modal for wide images
+      if (img.width > 800) return 'landscape modal-size-md';
+      return 'landscape modal-size-sm';
     }
   };
 

@@ -5,7 +5,6 @@
   position: relative;
   overflow: hidden;
 }
-
 /* Dynamic background pattern */
 .gallery-section::before {
   content: '';
@@ -20,18 +19,15 @@
   z-index: 0;
   animation: ambientLight 20s infinite alternate;
 }
-
 @keyframes ambientLight {
   0% { opacity: 0.7; }
   50% { opacity: 0.3; }
   100% { opacity: 0.7; }
 }
-
 .gallery-section .container {
   position: relative;
   z-index: 1;
 }
-
 /* Cinematic section title */
 .gallery-section .section-title {
   font-size: 3.2rem;
@@ -45,11 +41,9 @@
   transform: perspective(500px) rotateX(0deg);
   transition: transform 0.8s ease;
 }
-
 .gallery-section .section-title:hover {
   transform: perspective(500px) rotateX(5deg);
 }
-
 .gallery-section .section-title::before {
   content: '';
   position: absolute;
@@ -61,12 +55,10 @@
   border-radius: 5px;
   animation: pulseWidth 3s infinite alternate;
 }
-
 @keyframes pulseWidth {
   0% { width: 80px; opacity: 0.8; }
   100% { width: 120px; opacity: 1; }
 }
-
 /* Cinematic Grid Layout */
 .related-images-grid {
   display: grid;
@@ -75,7 +67,6 @@
   margin-bottom: 50px;
   perspective: 1000px;
 }
-
 /* Gallery Card - 3D Hover Effect */
 .related-images {
   position: relative;
@@ -91,7 +82,6 @@
   transform: translateZ(0) rotateY(0) scale(1);
   z-index: 1;
 }
-
 .related-images:hover {
   transform: translateZ(20px) rotateY(5deg) scale(1.05);
   box-shadow:
@@ -99,7 +89,6 @@
     0 0 25px rgba(229, 9, 20, 0.3);
   z-index: 3;
 }
-
 /* Premium visual effects layer */
 .related-images::after {
   content: '';
@@ -119,11 +108,9 @@
   transition: opacity var(--transition-medium);
   mix-blend-mode: screen;
 }
-
 .related-images:hover::after {
   opacity: 0.9;
 }
-
 /* Text readability gradient */
 .related-images::before {
   content: '';
@@ -142,7 +129,6 @@
   z-index: 1;
   transition: opacity var(--transition-medium);
 }
-
 /* Image hover effects */
 .main-image {
   position: absolute;
@@ -152,7 +138,6 @@
   height: 100%;
   overflow: hidden;
 }
-
 .main-image img {
   width: 100%;
   height: 100%;
@@ -161,12 +146,10 @@
   will-change: transform;
   filter: saturate(0.9) contrast(1.1);
 }
-
 .related-images:hover .main-image img {
   transform: scale(1.15);
   filter: saturate(1.2) contrast(1.15);
 }
-
 /* Metadata animations */
 .modal-meta {
   position: absolute;
@@ -179,12 +162,10 @@
   opacity: 0.6;
   transition: transform var(--transition-medium), opacity var(--transition-medium);
 }
-
 .related-images:hover .modal-meta {
   transform: translateY(0);
   opacity: 1;
 }
-
 .modal-meta h3 {
   font-size: 20px;
   font-weight: 700;
@@ -198,12 +179,10 @@
   opacity: 0.9;
   transition: transform var(--transition-medium) 0.1s, opacity var(--transition-medium) 0.1s;
 }
-
 .related-images:hover .modal-meta h3 {
   transform: translateY(0);
   opacity: 1;
 }
-
 .modal-meta > div {
   display: flex;
   gap: 15px;
@@ -213,12 +192,10 @@
   opacity: 0.7;
   transition: transform var(--transition-medium) 0.2s, opacity var(--transition-medium) 0.2s;
 }
-
 .related-images:hover .modal-meta > div {
   transform: translateY(0);
   opacity: 1;
 }
-
 .modal-meta .match {
   color: rgb(255, 63, 66);
   font-weight: 600;
@@ -228,14 +205,12 @@
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(70, 211, 105, 0.2);
 }
-
 .modal-meta .year {
   color: #e6e6e6;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-
 .modal-description {
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
@@ -248,7 +223,6 @@
   width: 100%;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
-
 /* Creative "Show More" button */
 .more-button-container {
   text-align: center;
@@ -256,7 +230,6 @@
   padding: 10px 0;
   position: relative;
 }
-
 .more-button {
   background: linear-gradient(135deg, var(--gallery-primary) 0%, var(--gallery-accent) 100%);
   color: var(--gallery-light);
@@ -274,7 +247,6 @@
   overflow: hidden;
   z-index: 1;
 }
-
 .more-button::before {
   content: '';
   position: absolute;
@@ -286,20 +258,16 @@
   transition: left 0.7s;
   z-index: -1;
 }
-
 .more-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(229, 9, 20, 0.5);
 }
-
 .more-button:hover::before {
   left: 100%;
 }
-
 .more-button:active {
   transform: translateY(-2px);
 }
-
 /* Immersive Modal Design - IMPROVED FOR DYNAMIC SIZING */
 .gallery-modal {
   position: fixed;
@@ -311,13 +279,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 99999; /* Ensure modal is on top of all sections */
   padding: 20px;
   backdrop-filter: blur(10px);
   opacity: 0;
   animation: modalFadeIn 0.4s ease forwards;
 }
-
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -326,16 +293,13 @@
     opacity: 1;
   }
 }
-
 /* Dynamic modal content size */
 .modal-content {
   background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
   color: white;
-  width: auto;  /* Changed from fixed width to auto */
-  max-width: 90vw; /* Changed from fixed pixels to viewport units */
   border-radius: 15px;
   position: relative;
-  max-height: 90vh;
+  max-height: 90vh; /* Updated for better viewing */
   overflow-y: auto;
   z-index: 10000;
   box-shadow:
@@ -346,8 +310,10 @@
   scrollbar-width: thin;
   scrollbar-color: var(--gallery-primary) rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Default sizing - will be overridden by size classes */
+  width: auto;
+  min-width: 300px;
 }
-
 @keyframes modalSlideUp {
   from {
     transform: translateY(50px) scale(0.95);
@@ -356,21 +322,17 @@
     transform: translateY(0) scale(1);
   }
 }
-
 .modal-content::-webkit-scrollbar {
   width: 8px;
 }
-
 .modal-content::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-
 .modal-content::-webkit-scrollbar-thumb {
   background: var(--gallery-primary);
   border-radius: 10px;
 }
-
 .close-btn {
   position: absolute;
   top: 15px;
@@ -391,12 +353,10 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
-
 .close-btn:hover {
   background-color: var(--gallery-primary);
   transform: rotate(90deg);
 }
-
 .modal-header {
   padding: 30px 35px;
   background: linear-gradient(to bottom,
@@ -405,7 +365,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
-
 .modal-header::before {
   content: '';
   position: absolute;
@@ -415,7 +374,6 @@
   height: 100%;
   background: linear-gradient(to bottom, var(--gallery-primary), var(--gallery-accent));
 }
-
 .modal-header h2 {
   margin: 0;
   font-size: 32px;
@@ -426,7 +384,6 @@
   position: relative;
   display: inline-block;
 }
-
 .modal-header h2::after {
   content: '';
   position: absolute;
@@ -437,7 +394,6 @@
   background: linear-gradient(90deg, var(--gallery-primary), transparent);
   border-radius: 2px;
 }
-
 .modal-header .modal-meta {
   position: static;
   transform: none;
@@ -448,7 +404,6 @@
   margin-top: 20px;
   align-items: center;
 }
-
 .modal-header .match {
   display: inline-block;
   color: var(--gallery-success);
@@ -459,14 +414,12 @@
   border-radius: 6px;
   box-shadow: 0 0 15px rgba(70, 211, 105, 0.15);
 }
-
 .modal-header .year {
   font-size: 16px;
   color: #bbb;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-
 .modal-body {
   display: flex;
   flex-direction: column;
@@ -475,12 +428,10 @@
   background: linear-gradient(to bottom, rgba(20, 20, 20, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
 }
 
-/* Enhanced modal image presentation - FURTHER OPTIMIZED */
+/* UPDATED: Enhanced modal image presentation adjusted to modal size */
 .modal-body .main-image {
   position: relative;
-  width: auto; /* Changed from fixed percentage */
-  max-width: 100%; /* Ensures image container doesn't overflow */
-  height: auto;
+  width: auto;
   overflow: visible;
   border-radius: 12px;
   box-shadow:
@@ -489,40 +440,42 @@
   margin-bottom: 30px;
   transform: perspective(1000px) rotateX(0deg);
   transition: transform 0.5s ease;
+  /* Ensure image container adapts to the modal size */
+  max-width: 100%;
 }
 
 .modal-body .main-image:hover {
   transform: perspective(1000px) rotateX(2deg);
 }
 
+/* UPDATED: Image size based on modal size classes */
 .modal-body .main-image img {
-  width: auto; /* Changed from 100% to auto */
-  height: auto; 
-  max-width: 100%; /* Prevents image from overflowing */
-  max-height: 70vh; /* Use viewport height for consistent sizing */
-  object-fit: contain; /* Maintains aspect ratio */
+  display: block;
   transition: transform 0.5s ease;
-  display: block; /* Removes any unwanted space */
+  object-fit: contain;
+  width: auto;
+  height: auto;
 }
 
-/* Different size handling for portrait vs landscape images */
-.modal-body .main-image.portrait img {
-  max-height: 80vh;
-  max-width: 80vw;
+/* UPDATED: Dynamic sizing for portrait images */
+.portrait .modal-body .main-image img {
+  max-height: calc(var(--modal-height, 70vh) - 200px);
+  max-width: calc(var(--modal-width, 60vw) - 80px);
 }
 
-.modal-body .main-image.landscape img {
-  max-height: 70vh;
-  max-width: 85vw;
+/* UPDATED: Dynamic sizing for landscape images */
+.landscape .modal-body .main-image img {
+  max-height: calc(var(--modal-height, 60vh) - 220px);
+  max-width: calc(var(--modal-width, 75vw) - 80px);
 }
 
 .modal-body .main-image:hover img {
   transform: scale(1.03);
 }
 
+/* UPDATED: Description text scaled based on modal size */
 .modal-body .modal-description {
   margin: 30px 0 10px;
-  font-size: 17px;
   line-height: 1.7;
   color: #eee;
   display: block;
@@ -536,6 +489,18 @@
   opacity: 0;
 }
 
+/* UPDATED: Scale font size based on modal size */
+.modal-size-sm .modal-body .modal-description {
+  font-size: 15px;
+}
+.modal-size-md .modal-body .modal-description {
+  font-size: 17px;
+}
+.modal-size-lg .modal-body .modal-description,
+.modal-size-xl .modal-body .modal-description {
+  font-size: 18px;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -546,7 +511,6 @@
     transform: translateY(0);
   }
 }
-
 .modal-body .modal-description::before {
   content: '';
   position: absolute;
@@ -558,17 +522,59 @@
   border-radius: 3px;
 }
 
-/* Dynamic modal sizing */
-.modal-size-auto {
-  width: auto !important;
-  min-width: 300px;
+/* UPDATED: Modal size classes with CSS variables for dynamic content sizing */
+.modal-size-sm {
+  max-width: 550px;
+  --modal-width: 550px;
+  --modal-height: 60vh;
+}
+.modal-size-md {
+  max-width: 750px;
+  --modal-width: 750px;
+  --modal-height: 70vh;
+}
+.modal-size-lg {
+  max-width: 950px;
+  --modal-width: 950px;
+  --modal-height: 75vh;
+}
+.modal-size-xl {
+  max-width: 1200px;
+  --modal-width: 1200px;
+  --modal-height: 80vh;
 }
 
-/* Modal size classes */
-.modal-size-sm { width: 500px; }
-.modal-size-md { width: 700px; }
-.modal-size-lg { width: 900px; }
-.modal-size-xl { width: 1100px; }
+/* UPDATED: Orientation specific adjustments */
+.portrait {
+  --orientation-ratio: 1.5;
+}
+.landscape {
+  --orientation-ratio: 0.75;
+}
+
+/* Adjust header content based on modal size */
+.modal-size-sm .modal-header h2 {
+  font-size: 24px;
+}
+.modal-size-md .modal-header h2 {
+  font-size: 28px;
+}
+.modal-size-lg .modal-header h2,
+.modal-size-xl .modal-header h2 {
+  font-size: 32px;
+}
+
+/* Adjust padding based on modal size */
+.modal-size-sm .modal-body {
+  padding: 25px;
+}
+.modal-size-md .modal-body {
+  padding: 30px;
+}
+.modal-size-lg .modal-body,
+.modal-size-xl .modal-body {
+  padding: 40px;
+}
 
 /* Movie-style gallery responsiveness */
 @media (max-width: 1199.98px) {
@@ -579,8 +585,13 @@
   .gallery-section .section-title {
     font-size: 2.8rem;
   }
-  .modal-size-xl { width: 90vw; }
-  .modal-size-lg { width: 90vw; }
+  
+  /* Modal size adjustments for large screens */
+  .modal-size-xl,
+  .modal-size-lg {
+    max-width: 90vw;
+    --modal-width: 90vw;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -593,15 +604,26 @@
   .related-images-grid {
     gap: 20px;
   }
+  
+  /* Modal adjustments for medium screens */
   .modal-header h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
-  /* Adjust modal image for medium screens */
-  .modal-body .main-image img {
-    max-height: 60vh;
-    max-width: 85vw;
+  .modal-size-md,
+  .modal-size-lg,
+  .modal-size-xl {
+    max-width: 90vw;
+    --modal-width: 90vw;
+    --modal-height: 65vh;
   }
-  .modal-size-md { width: 90vw; }
+  
+  /* Adjusted image sizes for medium screens */
+  .portrait .modal-body .main-image img {
+    max-height: calc(65vh - 180px);
+  }
+  .landscape .modal-body .main-image img {
+    max-height: calc(60vh - 200px);
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -618,25 +640,39 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .modal-body {
-    padding: 25px;
-  }
+  
+  /* Modal adjustments for small screens */
   .modal-header {
     padding: 25px;
   }
   .modal-header h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
+  .modal-body {
+    padding: 20px;
+  }
+  .modal-size-sm,
+  .modal-size-md,
+  .modal-size-lg,
+  .modal-size-xl {
+    max-width: 95vw;
+    --modal-width: 95vw;
+    --modal-height: 60vh;
+  }
+  
+  /* Scale down description text */
   .modal-body .modal-description {
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
     padding-left: 15px;
   }
-  .modal-body .main-image img {
-    max-height: 55vh;
-    max-width: 100%;
+  
+  /* Adjusted image sizes for small screens */
+  .portrait .modal-body .main-image img,
+  .landscape .modal-body .main-image img {
+    max-height: calc(55vh - 180px);
+    max-width: calc(95vw - 40px);
   }
-  .modal-size-sm { width: 95vw; }
 }
 
 @media (max-width: 575.98px) {
@@ -661,8 +697,10 @@
   .modal-meta .year {
     font-size: 13px;
   }
+  
+  /* Mobile modal adjustments */
   .modal-header h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .modal-header .modal-meta {
     flex-direction: column;
@@ -674,13 +712,27 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  /* Ensure images display well on mobile */
-  .modal-body .main-image img {
-    max-height: 50vh;
+  
+  /* All modal sizes get adjusted for mobile */
+  .modal-size-sm,
+  .modal-size-md,
+  .modal-size-lg,
+  .modal-size-xl {
+    width: 100%;
     max-width: 100%;
+    --modal-width: 100vw;
+    --modal-height: 80vh;
   }
+  
+  /* Further image size adjustments for mobile */
+  .portrait .modal-body .main-image img,
+  .landscape .modal-body .main-image img {
+    max-height: calc(45vh - 100px);
+    max-width: calc(100vw - 40px);
+  }
+  
   .modal-body .modal-description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.6;
     margin: 20px 0;
   }
@@ -704,7 +756,6 @@
     animation-delay: calc(var(--item-index, 0) * 0.1s);
     opacity: 0;
   }
-  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -715,14 +766,12 @@
       transform: translateY(0);
     }
   }
-  
   /* Apply dynamic hover states with hover capability */
   @media (hover: hover) {
     .related-images:hover::after {
       animation: shine 2s infinite linear;
       background-size: 200% 200%;
     }
-    
     @keyframes shine {
       0% { background-position: 0% 0%; }
       50% { background-position: 100% 100%; }
@@ -741,15 +790,3 @@
     backdrop-filter: blur(10px);
   }
 }
-
-/* Image orientation detection - JS will add these classes */
-.detect-portrait img {
-  max-height: 80vh;
-  width: auto;
-}
-
-.detect-landscape img {
-  max-width: 85vw;
-  height: auto;
-}
-
