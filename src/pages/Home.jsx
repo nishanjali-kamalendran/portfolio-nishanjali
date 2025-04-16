@@ -71,7 +71,6 @@ const Home = () => {
     const profile = {
         name: "Nishanjali Kamalendran",
         title: "Software Engineering Undergraduate",
-        summary: "I am a Software Engineering undergraduate with a passion for developing innovative applications and solving complex problems.",
         contact: {
             phone: "0716672616",
             email: "nishanjali.kamal@gmail.com",
@@ -91,7 +90,7 @@ const Home = () => {
             id: 1,
             title: "SlotZi",
             year: 2024,
-            tech: "React, Tailwind CSS, Node.js",
+            tech: "React, CSS, Node.js, Supabase",
             description: "Mobile app and website for early reservations, enabling businesses to manage bookings efficiently with a React frontend, Tailwind CSS styling, and a Node.js backend.",
             category: "Web & Mobile"
         },
@@ -275,15 +274,15 @@ const Home = () => {
     // Skills from CV
     const skills = [
         { name: "Java", category: "Programming", level: 85 },
-        { name: "Python", category: "Programming", level: 80 },
-        { name: "Software Testing", category: "Quality Assurance", level: 75 },
-        { name: "MySQL", category: "Database", level: 78 },
-        { name: "React", category: "Frontend", level: 82 },
-        { name: "JavaScript", category: "Programming", level: 83 },
-        { name: "HTML", category: "Frontend", level: 90 },
-        { name: "Tailwand CSS", category: "Frontend", level: 87 },
-        { name: "Machine Learning", category: "Data Science", level: 73 },
-        { name: "Test Automation", category: "Quality Assurance", level: 30 }
+    { name: "Python", category: "Programming", level: 80 },
+    { name: "Software Testing", category: "Quality Assurance", level: 75 },
+    { name: "MySQL", category: "Database", level: 78 },
+    { name: "React", category: "Frontend Framework", level: 82 },
+    { name: "JavaScript", category: "Programming", level: 83 },
+    { name: "HTML", category: "Frontend", level: 90 },
+    { name: "Tailwind CSS", category: "Frontend", level: 87 },
+    { name: "Machine Learning", category: "Data Science & AI", level: 73 },
+    { name: "Test Automation", category: "Quality Assurance", level: 70 }
     ];
 
     // Achievements from CV
