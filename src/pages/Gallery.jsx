@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../style/Gallery.css"; // Ensure this path is correct
+
 const Gallery = ({ galleryImages }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -19,6 +20,49 @@ const Gallery = ({ galleryImages }) => {
     setShowMore(true);
   };
 
+  useEffect(() => {
+    // Add event listener to close modal when clicking outside
+    const handleOutsideClick = (e) => {
+      if (modalVisible && e.target.classList.contains('gallery-modal')) {
+        closeModal();
+      }
+    };
+
+    // Add event listener for Escape key
+    const handleEscKey = (e) => {
+      if (modalVisible && e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    if (modalVisible) {
+      document.addEventListener('click', handleOutsideClick);
+      document.addEventListener('keydown', handleEscKey);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [modalVisible]);
+
+  // Function to determine modal content class based on image dimensions
+  const getModalSizeClass = (image) => {
+    if (!image) return '';
+    
+    const img = new Image();
+    img.src = image.src;
+    const aspectRatio = img.width / img.height;
+    
+    if (aspectRatio < 1) {
+      return 'portrait modal-size-md';
+    } else {
+      if (img.width > 1200) return 'landscape modal-size-xl';
+      if (img.width > 800) return 'landscape modal-size-lg';
+      return 'landscape modal-size-md';
+    }
+  };
+
   return (
     <section className="gallery-section" id="gallery">
       <div className="container">
@@ -35,7 +79,6 @@ const Gallery = ({ galleryImages }) => {
                   <span className="match">{image.match}</span>
                   <span className="year">{image.year}</span>
                 </div>
-                {/* Remove the description here so it only shows in the modal */}
               </div>
             </div>
           ))}
@@ -49,7 +92,7 @@ const Gallery = ({ galleryImages }) => {
         
         {modalVisible && selectedImage && (
           <div className="gallery-modal">
-            <div className="modal-content">
+            <div className={`modal-content ${getModalSizeClass(selectedImage)}`}>
               <button className="close-btn" onClick={closeModal}>×</button>
               <div className="modal-header">
                 <h2>{selectedImage.alt}</h2>
@@ -62,7 +105,6 @@ const Gallery = ({ galleryImages }) => {
                 <div className="main-image">
                   <img src={selectedImage.src} alt={selectedImage.alt} />
                 </div>
-                {/* Description only appears here in the modal */}
                 <p className="modal-description">{selectedImage.description}</p>
               </div>
             </div>

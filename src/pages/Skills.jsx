@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import "../style/Achievements.css"; // Import Achievements styling sheet
+import "../style/Skills.css"; // Import Achievements styling sheet
 const Skills = ({ skills }) => {
   // Initialize skill progress animations
   useEffect(() => {
@@ -51,3 +51,5 @@ const Skills = ({ skills }) => {
 };
 
 export default Skills;
+
+

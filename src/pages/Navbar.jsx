@@ -42,6 +42,7 @@ const Navbar = ({ scrolled, menuOpen, toggleMenu }) => {
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
