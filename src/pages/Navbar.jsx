@@ -26,7 +26,7 @@ const Navbar = ({ scrolled, menuOpen, toggleMenu }) => {
   return (
     <header className={`netflix-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <h1 className="netflix-logo">NISHFLIX</h1>
+        <h1 className="netflix-logo">NISHANJALI</h1>
         <button
           className="mobile-nav-toggle"
           onClick={toggleMenu}

@@ -275,13 +275,14 @@ const Home = () => {
     const skills = [
         { name: "Java", category: "Programming", level: 85 },
         { name: "Python", category: "Programming", level: 80 },
-        { name: "Software Testing", category: "QA", level: 75 },
+        { name: "Software Testing", category: "Quality Assurance", level: 75 },
         { name: "MySQL", category: "Database", level: 78 },
         { name: "React", category: "Frontend", level: 82 },
         { name: "JavaScript", category: "Programming", level: 83 },
         { name: "HTML", category: "Frontend", level: 90 },
-        { name: "CSS", category: "Frontend", level: 87 },
-        { name: "Machine Learning", category: "Data Science", level: 73 }
+        { name: "Tailwand CSS", category: "Frontend", level: 87 },
+        { name: "Machine Learning", category: "Data Science", level: 73 },
+        { name: "Test Automation", category: "Quality Assurance", level: 30 }
     ];
 
     // Achievements from CV
