@@ -19,7 +19,7 @@ const Projects = ({ projects }) => {
     <section className="projects-section" id="projects">
       <div className="container">
         <h2 className="section-title">My Projects</h2>
-
+        
         <div className="category-filter">
           <button
             className={activeCategory === 'All' ? 'active' : ''}

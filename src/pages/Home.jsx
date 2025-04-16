@@ -117,7 +117,7 @@ const Home = () => {
             year: 2024,
             tech: "Python",
             description: "Tool to analyze and visualize student performance, offering insights for academic improvement.",
-            category: "Data Analysis"
+            category: "Full Stack"
         },
         {
             id: 5,
