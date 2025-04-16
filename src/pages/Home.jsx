@@ -148,7 +148,7 @@ const Home = () => {
         {
             id: 2,
             role: "Process Associate",
-            organization: "HCLTechnologies Lanka - Colombo 02",
+            organization: "HCL Technologies Lanka - Colombo 02",
             period: "July 2024 - Jan 2025",
             description: "Managed customer inquiries via email and chat, ensuring timely and accurate responses. Analyzed and resolved issues effectively, escalating complex cases when needed. Developed strong communication skills through daily interactions with diverse customers."
         }
@@ -402,6 +402,7 @@ const Home = () => {
                 showMore={showMore}
                 setShowMore={setShowMore}
             />
+            
             
             <Contact 
                 profile={profile}
