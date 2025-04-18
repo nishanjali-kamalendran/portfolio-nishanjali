@@ -18,26 +18,32 @@ const Achievements = ({ achievements }) => {
     <section className="achievements-section" id="achievements">
       <div className="achievements-container">
         <h2 className="section-title">Achievements & Certificates</h2>
-        
         <div className="achievements-list">
           {achievements.map((achievement, index) => (
-            <div 
-              className="achievement-card" 
+            <div
+              className="achievement-card"
               key={`achievement-${index}`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <div className="achievement-content">
                 <div className="achievement-icon">
-                  {achievement.icon || '</>'}
+                  {achievement.image ? (
+                    <img 
+                      src={achievement.image} 
+                      alt={achievement.title || "Achievement"} 
+                      className="achievement-image"
+                    />
+                  ) : (
+                    '</>'
+                  )}
                 </div>
                 <div className="achievement-details">
                   {achievement.title && <h3 className="achievement-title">{achievement.title}</h3>}
-                  <p className="achievement-description">{achievement.description || achievement}</p>
+                  {achievement.description && <p className="achievement-description">{achievement.description}</p>}
                   {achievement.date && <span className="achievement-date">{achievement.date}</span>}
                 </div>
               </div>
-              
               {achievement.issuer && (
                 <div className="achievement-footer">
                   <span className="achievement-issuer">Issued by: {achievement.issuer}</span>

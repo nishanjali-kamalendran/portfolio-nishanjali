@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import "../style/Base.css"; // Import base styling sheet
+import "../style/Base.css"; 
+
 
 // Image imports
 import background from "../assets/background.jpeg";
@@ -31,6 +32,13 @@ import Gallery from './Gallery';
 import Contact from './Contact';
 import Footer from './Footer';
 
+//logos
+import logo1 from "../assets/linkedin.png";
+import logo2 from "../assets/olympiad.png";
+import logo3 from "../assets/slmf.png";
+import logo4 from "../assets/metho.png";
+import logo5 from "../assets/ancqq.png";
+import logo6 from "../assets/uom.jpeg";
 const Home = () => {
     // Animation states
     const [loaded, setLoaded] = useState(false);
@@ -287,15 +295,51 @@ const Home = () => {
 
     // Achievements from CV
     const achievements = [
-        "Represented the school at Sri Lanka Mathematics Competition 2019",
-        "Awarded with honours at the Sri Lanka Olympiad Mathematics Foundation 2017",
-        "Awarded for Mathematics at Methodist College Annual prize giving (2016,2017,2018)",
-        "Represented the school at ANCQ 2018 and awarded with high distinction",
-        "Python for Beginners - University of Moratuwa",
-        "Web Design for Beginners - University of Moratuwa",
-        "Programming Foundations -  Software Testing/QA"
-    ];
-
+        {
+          title: "Represented the school at Sri Lanka Mathematics Competition",
+          date: "2019",
+          issuer: "SLMC",
+          image: logo3
+        },
+        {
+          title: "Awarded with honours at the Sri Lanka Olympiad Mathematics Foundation",
+          date: "2017",
+          issuer: "Sri Lanka Olympiad Mathematics Foundation",
+          image: logo2
+        },
+        {
+          title: "Awarded for Mathematics at Methodist College Annual prize giving",
+          date: "2016-2018",
+          issuer: "Methodist College",
+          image: logo4
+        },
+        {
+          title: "Represented the school at ANCQ and awarded with High Distinction",
+          date: "2018",
+          issuer: "ANCQ",
+          image: logo5
+        },
+        {
+          title: "Python for Beginners",
+          date: "2024",
+          issuer: "University of Moratuwa",
+          image: logo6
+        },
+        {
+          title: "Web Design for Beginners",
+          date: "2024",
+          issuer: "University of Moratuwa",
+          image: logo6
+        },
+        {
+          title: "Programming Foundations - Software Testing/QA",
+          date: "2025",
+          issuer: "LinkedIn Learning",
+          image: logo1
+        }
+      ];
+    
+  
     // Modal states for Gallery
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
