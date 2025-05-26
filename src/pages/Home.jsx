@@ -18,6 +18,7 @@ import ex2 from "../assets/code_2.jpg";
 import ex3 from "../assets/code_3.jpg";
 import ex4 from "../assets/code_4.jpg";
 import Nishanjali from "../assets/Nishanjali.jpeg";
+import hultpic from "../assets/hultpic.jpg";
 
 // Component imports
 import Navbar from './Navbar';
@@ -141,6 +142,30 @@ const Home = () => {
             tech: "HTML, CSS, JavaScript",
             description: "Informative website that made it to the marketing phase at Idealize 24 held by University of Moratuwa, integrating dynamic features to attract participants.",
             category: "Web Development"
+        },
+        {
+            id: 7,
+            title: "Portfolio Website",
+            year: 2025,
+            tech: "React, Tailwind CSS",
+            description: "Personal portfolio website showcasing my projects and skills, built with React and styled using Tailwind CSS.",
+            category: "Web Development"
+        },
+        {
+            id: 8,
+            title: "Portfolio Website Testing",
+            year: 2025,
+            tech: "Selenium, Python - ONGOING",
+            description: "Automated end-to-end testing of my personal portfolio website using Selenium WebDriver with Python. The project validates UI elements, navigation flows, and form submissions to ensure a seamless user experience.",
+            category: "Automation Testing"
+        },
+        {
+            id: 9,
+            title: "Breast Cancer Detection System",
+            year: 2025,
+            tech: "Python, scikit-learn, Machine Learning",
+            description: "Developed a predictive system using classification and regression models to detect breast cancer severity and survival time. Applied feature engineering, GridSearchCV for hyperparameter tuning, and evaluated performance using AUC-ROC, Accuracy, MAE, and R² metrics. Ensemble methods like Voting Classifier and Decision Trees were used to boost model accuracy.",
+            category: "Machine Learning"
         }
     ];
 
@@ -211,7 +236,7 @@ const Home = () => {
         },
         { 
             id: 6, 
-            src: img6, 
+            src: hultpic, 
             alt: "Hult Prize IIT", 
             year: "2024",
             match: "Informatics Institute of Technology",
@@ -290,7 +315,8 @@ const Home = () => {
     { name: "HTML", category: "Frontend", level: 90 },
     { name: "Tailwind CSS", category: "Frontend", level: 87 },
     { name: "Machine Learning", category: "Data Science & AI", level: 73 },
-    { name: "Test Automation", category: "Quality Assurance", level: 70 }
+    { name: "Test Automation", category: "Quality Assurance", level: 70 },
+    { name: "Selenium", category: "Quality Assurance", level: 40 }
     ];
 
     // Achievements from CV
@@ -333,6 +359,12 @@ const Home = () => {
         },
         {
           title: "Programming Foundations - Software Testing/QA",
+          date: "2025",
+          issuer: "LinkedIn Learning",
+          image: logo1
+        },
+        {
+          title: "Learning Selenium with Python",
           date: "2025",
           issuer: "LinkedIn Learning",
           image: logo1

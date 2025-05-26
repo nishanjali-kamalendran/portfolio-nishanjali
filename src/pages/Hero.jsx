@@ -14,13 +14,13 @@ const Hero = ({ profile, loaded }) => {
         <p>{profile.summary}</p>
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary">Contact Me</a>
-          <a
+          {/*<a
             href="/Nishanjali Kamalendran.pdf"
             className="btn btn-secondary"
             download="Nishanjali Kamalendran.pdf"
           >
             Download CV
-          </a>
+          </a>*/}
         </div>
       </div>
     </section>
